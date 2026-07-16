@@ -1,0 +1,19 @@
+{
+  "name": "stillos-notary",
+  "version": "1.0.0",
+  "mcpName": "io.github.stillmarcus24/stillos-notary",
+  "description": "Direct tool access to StillOS's signed, x402-paid verification and screening primitives: claim notarization, resolver-graded verdicts, OFAC SDN screening, and validated corporate distress scoring. Every response is Ed25519-signed and independently verifiable.",
+  "bin": {
+    "stillos-notary": "bin.cjs"
+  },
+  "main": "mcp.cjs",
+  "keywords": [
+    "x402", "mcp", "agent", "trust", "verification", "notary", "ofac", "sanctions-screening",
+    "distress", "bankruptcy", "sec-edgar", "signed-receipt", "agent-payments", "usdc"
+  ],
+  "author": "StillOS / NolaWealth",
+  "license": "MIT",
+  "homepage": "https://nolawealthfinancial.com/notary",
+  "engines": { "node": ">=18" },
+  "files": ["mcp.cjs", "bin.cjs", "README.md", "LICENSE"]
+}

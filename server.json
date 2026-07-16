@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.stillmarcus24/stillos-notary",
+  "description": "Signed, x402-paid StillOS notary tools: claim verdicts, OFAC screening, distress scoring.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/stillmarcus24/stillos-notary",
+    "source": "github"
+  },
+  "homepage": "https://nolawealthfinancial.com/notary",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "stillos-notary",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" },
+      "runtimeHint": "npx",
+      "runtimeArguments": [
+        { "type": "positional", "value": "mcp", "description": "run as MCP stdio server" }
+      ]
+    }
+  ]
+}
