@@ -1,0 +1,13 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      notaryUrl:
+        type: string
+        description: "Override the live notary base URL (defaults to https://nolawealthfinancial.com/notary)."
+    required: []
+  commandFunction: |-
+    (config) => ({command: 'npx', args: ['-y', 'stillos-notary', 'mcp'], env: config.notaryUrl ? {STILLOS_NOTARY: config.notaryUrl} : {}})
