@@ -17,13 +17,15 @@ const SERVER = { name: 'stillos-notary', version: '1.0.0' };
 const PROTOCOL = '2024-11-05';
 const NOTARY = process.env.STILLOS_NOTARY || 'https://nolawealthfinancial.com/notary';
 const DEFAULT_AGENT = `mcp-client-${Math.random().toString(36).slice(2, 8)}`;
+const { version: PKG_VERSION } = require('./package.json');
+const UA = `stillos-notary/${PKG_VERSION} (mcp; +https://www.npmjs.com/package/stillos-notary)`;
 
 function call(path, body, xPaymentHeader) {
   return new Promise((resolve) => {
     let u; try { u = new URL(NOTARY.replace(/\/+$/, '') + path); } catch { return resolve({ error: 'bad NOTARY base url' }); }
     const lib = u.protocol === 'http:' ? http : https;
     const data = JSON.stringify(body);
-    const headers = { 'content-type': 'application/json', 'content-length': Buffer.byteLength(data) };
+    const headers = { 'content-type': 'application/json', 'content-length': Buffer.byteLength(data), 'user-agent': UA };
     if (xPaymentHeader) headers['X-PAYMENT'] = xPaymentHeader;
     const req = lib.request(u, { method: 'POST', headers }, (res) => {
       let b = ''; res.on('data', c => b += c);

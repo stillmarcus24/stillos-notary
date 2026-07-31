@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stillos"
+version = "0.1.0"
+description = "Verify what your AI agent actually did — signed receipts, external resolvers, zero trust required."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = []
+
+[project.urls]
+Homepage = "https://nolawealthfinancial.com/notary"
+Documentation = "https://nolawealthfinancial.com/notary"
+Repository = "https://github.com/stillmarcus24/stillos-notary"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["stillos*"]

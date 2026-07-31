@@ -1,8 +1,8 @@
 {
   "name": "stillos-notary",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "mcpName": "io.github.stillmarcus24/stillos-notary",
-  "description": "Direct tool access to StillOS's signed, x402-paid verification and screening primitives: claim notarization, resolver-graded verdicts, OFAC SDN screening, and validated corporate distress scoring. Every response is Ed25519-signed and independently verifiable.",
+  "description": "Programmatic attestation infrastructure for backend and institutional integration. Submit a claim via a single HTTP call; receive a cryptographically signed (Ed25519), independently verifiable verdict settled against real external ground truth — on-chain state, GitHub, market data, or structured API responses. No SDK dependency, no counterparty trust required. Institutional capabilities include OFAC SDN entity screening and validated corporate distress scoring.",
   "bin": {
     "stillos-notary": "bin.cjs"
   },
