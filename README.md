@@ -1,5 +1,15 @@
 # stillos-notary
 
+**Deprecated — superseded by [`stillos-notary-mcp`](https://github.com/stillmarcus24/stillos-notary-mcp) ([npm](https://www.npmjs.com/package/stillos-notary-mcp)).**
+This package still works (the underlying notary API doesn't change), but `stillos-notary-mcp` is the actively developed
+package: more tools (`verify_receipt`, `file_dispute` as first-class), a live remote HTTP MCP endpoint in addition to
+stdio, and the current canonical domain. Install that one for new integrations.
+
+This repo stays up as the historical home of the public Vauban/ForeSeal interop discussion
+([issue #1](https://github.com/stillmarcus24/stillos-notary/issues/1)).
+
+---
+
 Direct tool access to StillOS's signed, x402-paid verification and screening primitives — no separate API docs lookup, no SDK install beyond this package.
 
 ## Install (MCP)
