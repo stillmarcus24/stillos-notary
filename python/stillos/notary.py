@@ -4,7 +4,7 @@ stillos.notary — minimal client for the StillOS Notary.
 Free tier: 20 verdicts/day, no API key required.
 Pro tier:  unlimited, pass api_key= to Notary().
 
-Docs: https://nolawealthfinancial.com/notary
+Docs: https://stillosdigitalholdings.com/notary
 """
 import urllib.request
 import urllib.error
@@ -12,7 +12,7 @@ import json
 from dataclasses import dataclass, field
 from typing import Optional, Any
 
-BASE_URL = "https://nolawealthfinancial.com/notary"
+BASE_URL = "https://stillosdigitalholdings.com/notary"
 
 
 def _post(url: str, payload: dict, api_key: Optional[str] = None) -> dict:

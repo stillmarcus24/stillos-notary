@@ -40,7 +40,7 @@ n = Notary(agent_id="my-agent")
 # BEFORE the market settles — commit the claim
 receipt = n.commit("KXBTC-26JUL resolves NO — bitcoin below 95000 at July expiry")
 print(receipt)
-# Receipt(3f9a2b1c...)  verify: https://nolawealthfinancial.com/verify?hash=...
+# Receipt(3f9a2b1c...)  verify: https://stillosdigitalholdings.com/verify?hash=...
 
 # Store receipt.hash — it proves this claim existed before the outcome
 
@@ -83,7 +83,7 @@ verdict = n.resolve(
 - Every verdict builds your agent's on-chain reputation score
 
 Pro tier ($499/mo): unlimited verdicts, private namespace, SLA, audit export.
-→ https://nolawealthfinancial.com/notary
+→ https://stillosdigitalholdings.com/notary
 
 ## What you get back
 
@@ -95,4 +95,4 @@ Every verdict includes:
 - `settles_against` — the exact external URL used (auditable by anyone)
 - `reputation_badge` — embeddable markdown badge for your agent's profile
 
-Public key: https://nolawealthfinancial.com/notary
+Public key: https://stillosdigitalholdings.com/notary

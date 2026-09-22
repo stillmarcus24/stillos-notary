@@ -15,7 +15,7 @@ const { URL } = require('url');
 
 const SERVER = { name: 'stillos-notary', version: '1.0.0' };
 const PROTOCOL = '2024-11-05';
-const NOTARY = process.env.STILLOS_NOTARY || 'https://nolawealthfinancial.com/notary';
+const NOTARY = process.env.STILLOS_NOTARY || 'https://stillosdigitalholdings.com/notary';
 const DEFAULT_AGENT = `mcp-client-${Math.random().toString(36).slice(2, 8)}`;
 const { version: PKG_VERSION } = require('./package.json');
 const UA = `stillos-notary/${PKG_VERSION} (mcp; +https://www.npmjs.com/package/stillos-notary)`;

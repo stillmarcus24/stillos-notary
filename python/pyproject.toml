@@ -12,8 +12,8 @@ requires-python = ">=3.9"
 dependencies = []
 
 [project.urls]
-Homepage = "https://nolawealthfinancial.com/notary"
-Documentation = "https://nolawealthfinancial.com/notary"
+Homepage = "https://stillosdigitalholdings.com/notary"
+Documentation = "https://stillosdigitalholdings.com/notary"
 Repository = "https://github.com/stillmarcus24/stillos-notary"
 
 [tool.setuptools.packages.find]

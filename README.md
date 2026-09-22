@@ -34,7 +34,7 @@ Direct tool access to StillOS's signed, x402-paid verification and screening pri
 
 ## Payment
 
-Every tool call is a real HTTP POST to `https://nolawealthfinancial.com/notary/*`. An unpaid call returns the endpoint's real x402 402 response verbatim — parse the `accepts[]` array, pay, and retry the same tool call with an `x_payment_header` argument containing your `X-PAYMENT` header value.
+Every tool call is a real HTTP POST to `https://stillosdigitalholdings.com/notary/*`. An unpaid call returns the endpoint's real x402 402 response verbatim — parse the `accepts[]` array, pay, and retry the same tool call with an `x_payment_header` argument containing your `X-PAYMENT` header value.
 
 Every paid response is Ed25519-signed and independently verifiable at `GET /notary/verify?hash=...` — you don't have to trust StillOS's word for it.
 
